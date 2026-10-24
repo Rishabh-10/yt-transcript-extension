@@ -1,0 +1,75 @@
+{
+  "responseContext": {},
+  "actions": [
+    {
+      "updateEngagementPanelAction": {
+        "targetId": "engagement-panel-searchable-transcript",
+        "content": {
+          "transcriptRenderer": {
+            "content": {
+              "transcriptSearchPanelRenderer": {
+                "body": {
+                  "transcriptSegmentListRenderer": {
+                    "initialSegments": [
+                      {
+                        "transcriptSectionHeaderRenderer": {
+                          "startMs": "0",
+                          "endMs": "65000",
+                          "snippet": { "simpleText": "Intro" }
+                        }
+                      },
+                      {
+                        "transcriptSegmentRenderer": {
+                          "startMs": "1200",
+                          "endMs": "4800",
+                          "snippet": { "runs": [{ "text": "Hello and " }, { "text": "welcome." }] },
+                          "startTimeText": { "simpleText": "0:01" }
+                        }
+                      },
+                      {
+                        "transcriptSegmentRenderer": {
+                          "startMs": "4800",
+                          "endMs": "9000",
+                          "snippet": { "runs": [{ "text": "Today we're\nbuilding an extension." }] },
+                          "startTimeText": { "simpleText": "0:04" }
+                        }
+                      },
+                      {
+                        "transcriptSegmentRenderer": {
+                          "startMs": "3723000",
+                          "endMs": "3725500",
+                          "snippet": { "runs": [{ "text": "Thanks for watching!" }] },
+                          "startTimeText": { "simpleText": "1:02:03" }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "footer": {
+                  "transcriptFooterRenderer": {
+                    "languageMenu": {
+                      "sortFilterSubMenuRenderer": {
+                        "subMenuItems": [
+                          {
+                            "title": "English",
+                            "selected": true,
+                            "continuation": { "reloadContinuationData": { "continuation": "PARAMS_EN" } }
+                          },
+                          {
+                            "title": "English (auto-generated)",
+                            "selected": false,
+                            "continuation": { "reloadContinuationData": { "continuation": "PARAMS_A_EN" } }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

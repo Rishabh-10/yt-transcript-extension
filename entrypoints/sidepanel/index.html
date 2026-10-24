@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Transcript</title>
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="video-meta">
+        <h1 id="title">YouTube Transcript</h1>
+        <p id="author"></p>
+      </div>
+
+      <div class="row">
+        <select id="track" aria-label="Transcript language" hidden></select>
+        <button id="copy" type="button" disabled>Copy</button>
+        <details id="download-menu" class="menu">
+          <summary role="button" aria-disabled="true">Download</summary>
+          <div class="menu-items">
+            <button type="button" data-format="txt">Text (.txt)</button>
+            <button type="button" data-format="srt">Subtitles (.srt)</button>
+            <button type="button" data-format="vtt">WebVTT (.vtt)</button>
+            <button type="button" data-format="md">Markdown (.md)</button>
+          </div>
+        </details>
+      </div>
+
+      <div class="row search">
+        <input id="search" type="search" placeholder="Search transcript" aria-label="Search transcript" disabled />
+        <span id="match-count" aria-live="polite"></span>
+        <button id="prev-match" type="button" aria-label="Previous match" disabled>↑</button>
+        <button id="next-match" type="button" aria-label="Next match" disabled>↓</button>
+      </div>
+
+      <div class="row options">
+        <label><input id="opt-timestamps" type="checkbox" /> Timestamps</label>
+        <label><input id="opt-follow" type="checkbox" /> Follow video</label>
+      </div>
+    </header>
+
+    <main>
+      <div id="status" class="status"></div>
+      <ol id="segments" class="segments" hidden></ol>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
