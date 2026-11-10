@@ -186,7 +186,7 @@ function resetVideo() {
   rowEls = [];
   textEls = [];
   els.list.replaceChildren();
-  els.title.textContent = 'YouTube Transcript';
+  els.title.textContent = 'YT transcriber';
   els.author.textContent = '';
   els.track.hidden = true;
   els.footer.textContent = '';
